@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HelpHub: Connecting Volunteers</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .w3-bar {
+      background-color: transparent;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+
+    .w3-bar .w3-bar-item {
+      color: black;
+      font-size: 16px;
+      padding: 12px 18px;
+      transition: 0.3s ease-in-out;
+    }
+
+    .w3-bar .w3-bar-item:hover {
+      background-color: grey;
+      border-radius: 5px;
+    }
+
+    .w3-bar .w3-right {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .w3-bar .w3-right:hover {
+      background-color: gray;
+    }
+
+    .helpHub-text {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      font-size: 30px;
+      color: black;
+      font-weight: medium;
+      font-family: "Lucida Handwriting", cursive;
+    }
+
+    .charity-profile {
+      max-width: 800px;
+      margin: 60px auto;
+    }
+
+    .charity-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .back-arrow-img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .charity-profile h1 {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .charity-image {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MfRLVBNYscyEZrxkB-Tfc8mH7WqZxN-VHQ&s');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 20px 0;
+    }
+
+    .charity-section {
+      margin-bottom: 20px;
+    }
+
+    .charity-section h2 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .footer {
+      background-color: black;
+      color: white;
+      text-align: left;
+      padding: 20px;
+      margin-top: 60px;
+      position: relative;
+    }
+
+    .footer .logo {
+      color: white;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .footer-icons {
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .icon {
+      width: 30px;
+      height: 30px;
+      background-color: white;
+      color: black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: bold;
+      overflow: hidden;
+    }
+
+    .instagram-image,
+    .tumblr-image,
+    .facebook-image,
+    .twitter-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .subscribe-box {
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    .subscribe-box label {
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .subscribe-form {
+      display: flex;
+      align-items: center;
+    }
+
+    .subscribe-form input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      font-size: 16px;
+    }
+
+    .subscribe-form button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    .footer-logo-circle {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .footer-logo-circle img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="w3-container">
+    <div class="w3-bar">
+      <div class="nav-container">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Charities</a>
+        <a href="#" class="w3-bar-item w3-button">Charity Profile</a>
+        <a href="#" class="w3-bar-item w3-button">About Us</a>
+      </div>
+      <a href="#" class="w3-bar-item w3-button w3-right">Volunteer Now</a>
+    </div>
+    <div class="helpHub-text">HelpHub</div>
+  </div>
+
+  <div class="charity-profile">
+    <div class="charity-header">
+      <img class="back-arrow-img" src="https://static.vecteezy.com/system/resources/previews/006/991/685/non_2x/arrow-back-icon-which-is-suitable-for-commercial-work-and-easily-modify-or-edit-it-vector.jpg" alt="Back Arrow">
+      <h1>Charity Profile</h1>
+    </div>
+    <div class="charity-image"></div>
+    <div class="charity-section">
+      <h2>Mission</h2>
+      <p>We believe in meeting physical and spiritual needs—empowering the church to reach forgotten, marginalized people groups with clean and living water.</p>
+    </div>
+    <div class="charity-section">
+      <h2>History</h2>
+      <p>Inspired by a teaching on Psalm 67, our founders began partnering with local pastors in South Sudan to bring clean and living water. Now, we support local partners across Africa and Asia to transform unreached communities.</p>
+    </div>
+    <div class="charity-section">
+      <h2>Needs</h2>
+      <p>1 in 10 people do not have clean water. And many have never heard the gospel. Join 22,000 donors doing whatever it takes to serve the unreached.</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">HelpHub</div>
+      <div class="subscribe-box">
+        <label for="email-input">Join Our Movement!</label>
+        <div class="subscribe-form">
+          <input id="email-input" type="email" placeholder="Enter your email">
+          <button>Join</button>
+        </div>
+      </div>
+      <div class="footer-icons">
+        <div class="icon">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png" alt="Instagram" class="instagram-image">
+        </div>
+        <div class="icon">
+          <img src="https://cdn.prod.website-files.com/5d66bdc65e51a0d114d15891/64cebdd90aef8ef8c749e848_X-EverythingApp-Logo-Twitter.jpg" alt="Twitter" class="twitter-image">
+        </div>
+        <div class="icon">
+          <img src="https://logos-world.net/wp-content/uploads/2020/09/Tumblr-Symbol.png" alt="Tumblr" class="tumblr-image">
+        </div>
+        <div class="icon">
+          <img src="https://marktwainhouse.org/wp-content/uploads/2023/06/Facebook-logo.png" alt="Facebook" class="facebook-image">
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>Privacy policy</span>
+        <span>Terms of service</span>
+      </div>
+    </div>
+    <div class="footer-logo-circle">
+      <img src="https://img.freepik.com/premium-vector/hh-initials-logo-design-initial-letter-logo-creative-luxury-logo-template_773552-174.jpg" alt="HelpHub Logo Circle">
+    </div>
+  </footer>
+</body>
+</html>
